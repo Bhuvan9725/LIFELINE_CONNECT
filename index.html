@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFELINE CONNECT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+   <style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #B22222;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+header .logo-text {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+.hero {
+    background-image: url('slide-1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 5rem 2rem;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #FFD700;
+    color: #B22222;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffcc00;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 20%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #f10c0c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0a89d8;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .logo-text {
+        font-size: 1.5rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header nav ul li {
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+   </style>
+   
+</head>
+<body>
+    <header>
+        <div class="logo-section" style="display: flex; align-items: center;">
+            <img src="icon.jpg" alt="logo">
+            <span class="logo-text">Lifeline Connect</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="register.php"><i class="fas fa-heart"></i> Donate Blood</a></li>
+                <li><a href="requestblood.php"><i class="fas fa-tint"></i> Request Blood</a></li>
+                <li><a href="blooddonor.php"><i class="fas fa-users"></i> Find Donor</a></li>
+                <li><a href="bloodbanks.php"><i class="fas fa-search"></i> Search Blood Bank</a></li>
+                <li><a href="camps.php"><i class="fas fa-calendar-alt"></i> Camps</a></li>
+                <li><a href="admin.php"><i class="fas fa-user-shield"></i> Admin</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="feedback.html"><i class="fas fa-comments"></i> Feedback</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+   
+    <section class="hero">
+        <h2>Save Lives, Donate Blood</h2>
+        <p>Your donation can make a big difference in someone's life.</p>
+    </section>
+
+    <section class="info">
+        <div class="card">
+            <h3>Importance of Blood Donation</h3>
+            <p>Blood is a life-sustaining fluid that cannot be manufactured. It is essential for patients undergoing surgeries, treatments for chronic diseases, and emergencies.</p>
+            <img src="b1.png" alt="Importance of Blood Donation" style="width:100%; height:50%; border-radius:5px;">
+        </div>
+        <div class="card">
+            <h3>The Process of Blood Donation</h3>
+            <p>The donation process is simple and takes less than an hour. It involves a health screening and the donation of about a pint of blood.</p>
+            <img src="b2.jpeg" alt="Process of Blood Donation" style="width:100%; height:50%; border-radius:5px;">
+        </div>
+        <div class="card">
+            <h3>Eligibility for Blood Donation</h3>
+            <p>Donors must meet specific criteria, including age, weight, and health standards, to ensure safety for both donor and recipient.</p>
+            <img src="b3.jpeg" alt="Eligibility for Blood Donation" style="width:100%; height:50%; border-radius:5px;">
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="card">
+            <h3>Benefits of Blood Donation</h3>
+            <p>Blood donations can save lives and also provide psychological benefits to donors, including fulfillment and improved cardiovascular health.</p>
+            <img src="b4.jpeg" alt="Benefits of Blood Donation" style="width:100%; height:50%; border-radius:5px;">
+        </div>
+        <div class="card">
+            <h3>Challenges and Solutions</h3>
+            <p>Many blood banks face shortages due to misconceptions and fear. Education and community drives can help increase donations.</p>
+            <img src="b5.jpeg" alt="Challenges of Blood Donation" style="width:100%; height:50%; border-radius:5px;">
+        </div>
+        <div class="card">
+            <h3>Blood Donation Organizations</h3>
+            <p>Organizations like the Red Cross and WHO promote safe blood donation practices and work to ensure a steady blood supply globally.</p>
+            <img src="b6.jpeg" alt="Blood Donation Organizations" style="width:100%; height:50%; border-radius:5px;">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/GctAAAhsTuuBnWZA/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/LIFECONNect18?s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/lifeline_connect?igsh=bDNlbHJndGhyY2pn" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/lifeline-connect-30414b32b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://youtube.com/@lifeconnect-h4z?si=iS7AFcbeE1ABR92t" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <p>© 2024 LifeLine Connect. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

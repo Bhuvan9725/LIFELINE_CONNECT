@@ -1,0 +1,242 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+/* Banner Section Styles */
+.banner {
+    background-image: url('banner-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 70px; /* Offset for the fixed header */
+    position: relative;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.banner h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e33e3e;
+    transform: scale(1.05);
+}
+
+/* Info Section Styles */
+.info-section {
+    background-image: url('info-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.info-section ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.info-section ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Trusted Sites Section */
+.donation-sites {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.donation-sites h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.donation-sites ul {
+    margin: 20px 0;
+}
+
+.donation-sites a {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.donation-sites a:hover {
+    color: #ff4d4d;
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact {
+    background-image: url('contact-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2em;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff4d4d;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.banner h2,
+.cta-button {
+    animation: fadeIn 2s ease-in-out;
+}

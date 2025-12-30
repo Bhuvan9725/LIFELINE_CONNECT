@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #fdfbfb, #ebedee);
+            color: #333;
+            padding-top: 60px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #B22222;
+            padding: 5px 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            height: 50px;
+        }
+
+        header img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 5px;
+            margin: 0 8px;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #ffd700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin: 50px 0 30px;
+            font-weight: 700;
+            color: #222;
+            position: relative;
+            text-transform: uppercase;
+            animation: fadeIn 1.5s ease;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 5px;
+            background-color: #f85032;
+            margin: 15px auto 0;
+            border-radius: 3px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card strong {
+            font-size: 1.3rem;
+            color: #f85032;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .card .icon {
+            font-size: 1.5rem;
+            color: #f85032;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            opacity: 0.2;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.95rem;
+        }
+
+        footer strong {
+            color: #f85032;
+            text-transform: uppercase;
+        }
+
+        .footer-contact a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .footer-contact svg {
+            fill: #f85032;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 30px 0;
+        }
+
+        .marquee img {
+            height: 80px;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+
+        @media screen and (min-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="icon.jpg" alt="Logo">
+            <h1>LifeLine Connect</h1>
+        </div>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Types of Blood Donations</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="whole.jpeg" alt="Whole Blood Donation">
+                <i class="fas fa-tint icon"></i>
+                <strong>Whole Blood Donation</strong>
+                <p>Donors give about a pint of whole blood, which is then separated into its components (red cells, plasma, platelets, and white cells).</p>
+            </div>
+            <div class="card">
+                <img src="plasma.jpg" alt="Plasma Donation">
+                <i class="fas fa-tint icon"></i>
+                <strong>Plasma Donation</strong>
+                <p>Only the plasma portion of the blood is collected, which is used for patients with clotting disorders.</p>
+            </div>
+            <div class="card">
+                <img src="platelet.jpg" alt="Platelet Donation">
+                <i class="fas fa-tint icon"></i>
+                <strong>Platelet Donation</strong>
+                <p>Platelets are collected, often used for cancer patients or those with blood disorders.</p>
+            </div>
+            <div class="card">
+                <img src="redcell.png" alt="Red Cell Donation">
+                <i class="fas fa-tint icon"></i>
+                <strong>Red Cell Donation</strong>
+                <p>Red blood cells are collected, which are crucial for patients with anemia or trauma.</p>
+            </div>
+        </div>
+
+        <h2>Eligibility Requirements</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="criteria.png" alt="Eligibility Requirements">
+                <i class="fas fa-check-circle icon"></i>
+                <p>Donors typically must be at least 17 years old (16 with parental consent in some areas), weigh at least 110 pounds, and be in good health.</p>
+            </div>
+            <div class="card">
+                <img src="eligibilty.jpg" alt="Eligibility Criteria">
+                <i class="fas fa-check-circle icon"></i>
+                <p>Certain medical conditions, recent travel, or lifestyle factors might affect eligibility. It’s best to check with local blood banks for specific criteria.</p>
+            </div>
+        </div>
+
+        <h2>Process</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="regist.jpeg" alt="Registration">
+                <strong>Registration</strong>
+                <p>Donors provide personal and medical information.</p>
+            </div>
+           
+            <div class="card">
+                <img src="screen.png" alt="Health Screening">
+                <strong>Health Screening</strong>
+                <p>A brief health assessment is conducted to ensure it’s safe to donate.</p>
+            </div>
+            <div class="card">
+                <img src="donb.jpeg" alt="Donation">
+                <strong>Donation</strong>
+                <p>Blood is collected through a needle inserted into a vein, usually in the arm. The process takes about 8-10 minutes.</p>
+            </div>
+            <div class="card">
+                <img src="recover.jpeg" alt="Recovery">
+                <strong>Recovery</strong>
+                <p>Donors are monitored for a short period after donation and are encouraged to rest and hydrate.</p>
+            </div>
+        </div>
+
+        <h2>Frequency</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="bfre.jpeg" alt="Whole Blood Donation Frequency">
+                <strong>Whole Blood</strong>
+                <p>Can be donated every 56 days.</p>
+            </div>
+            <div class="card">
+                <img src="plate.png" alt="Platelet Donation Frequency">
+                <strong>Platelets</strong>
+                <p>Can be donated every 7 days, up to 24 times a year.</p>
+            </div>
+            <div class="card">
+                <img src="plas.jpeg" alt="Plasma Donation Frequency">
+                <strong>Plasma</strong>
+                <p>Can be donated more frequently, depending on local guidelines.</p>
+            </div>
+        </div>
+
+        <h2>Safety</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="safety.jpeg" alt="Safety">
+                <strong>Safety</strong>
+                <p>Blood donation is a safe process with minimal risks. Equipment is sterile and used only once to prevent infections.</p>
+            </div>
+            <div class="card">
+                <img src="after.jpeg" alt="After Donation">
+                <strong>After Donation</strong>
+                <p>People may experience slight dizziness or fatigue, but these are usually temporary.</p>
+            </div>
+        </div>
+
+        <h2>Impact</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="three.png" alt="Impact">
+                <strong>Impact</strong>
+                <p>A single donation can potentially save up to three lives, as the collected blood can be separated into different components to treat various conditions.</p>
+            </div>
+            <div class="card">
+                <img src="path-to-image" alt="Contribution">
+                <strong>Contribution</strong>
+                <p>Blood donation is a vital way to contribute to the well-being of others, and many communities rely on the generosity of donors to maintain an adequate supply of blood for those in need.</p>
+            </div>
+        </div>
+
+        <h2>About Blood Donation</h2>
+        <div class="marquee">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <img src="image4.jpg" alt="Image 4">
+            <img src="image5.jpg" alt="Image 5">
+            <img src="image6.jpg" alt="Image 5">
+        </div>
+    </div>
+S
+    <footer>
+        <strong>Contact Us</strong>
+        <div class="footer-contact">
+            <a href="https://www.instagram.com/lifeline_connect" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="..."/>
+                </svg> @Lifeline_connect
+            </a>
+            <a href="mailto:lifelineconnect18@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="..."/>
+                </svg> lifelineconnect18@gmail.com
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
